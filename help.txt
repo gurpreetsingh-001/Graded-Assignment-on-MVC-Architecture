@@ -1,0 +1,11 @@
+npm i express
+npm i mongoose
+npm i bcryptjs
+npm i jsonwebtoken
+npm i dotenv
+
+CREATE .env file
+
+Mongo_Url =
+JWT_SECRETKEY= 1723871t2f7123117823tge68t7gfcfr743igyfrf
+
