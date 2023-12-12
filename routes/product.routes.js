@@ -6,9 +6,9 @@ const {productAdd,productUpdateId, productFilter,ProductViewAll} =require('../co
 const productRoute =express.Router();
 
 productRoute.post('/new',jwtHandler,productAdd);
-productRoute.post('/update/:id',productUpdateId);
-productRoute.post('/filter',productFilter);
-productRoute.get('/getAllProduct',ProductViewAll);
+productRoute.post('/update/:id',jwtHandler,productUpdateId);
+productRoute.post('/filter',jwtHandler,productFilter);
+productRoute.get('/getAllProduct',jwtHandler,ProductViewAll);
 
 
 
